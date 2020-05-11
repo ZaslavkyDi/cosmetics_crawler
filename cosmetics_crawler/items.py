@@ -9,6 +9,19 @@ import scrapy
 
 
 class CosmeticsCrawlerItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    url = scrapy.Field()
+    name = scrapy.Field()
+    photo_url = scrapy.Field()
+    breadcrumbs = scrapy.Field()
+    description = scrapy.Field()
+    price = scrapy.Field()
+    availability = scrapy.Field()
+    brand = scrapy.Field()
+    attributes = scrapy.Field()
+    rating = scrapy.Field()
+    feedback = scrapy.Field()
+    size = scrapy.Field()
+
+    create_date = scrapy.Field()
+    update_date = scrapy.Field()
+    site_name = scrapy.Field()

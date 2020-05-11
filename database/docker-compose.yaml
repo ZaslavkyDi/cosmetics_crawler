@@ -2,7 +2,7 @@ version: '3.5'
 
 services:
   postgres:
-    container_name: postgres_container
+    container_name: cosmetic_db
     image: postgres
     environment:
       POSTGRES_DB: cosmetic
@@ -10,7 +10,7 @@ services:
       POSTGRES_PASSWORD: 060298Dz
       PGDATA: /data/postgres
     volumes:
-       - postgres:/data/postgres
+       - ./db_data:/data/postgres
     ports:
       - "5432:5432"
     restart: unless-stopped
